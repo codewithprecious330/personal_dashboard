@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Dashboard</title>
+  <link rel="stylesheet" href="advance.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Input Section -->
+    <div class="form-card">
+      <h1>💫 Create Your Personal Dashboard</h1>
+      <p>Fill in your details below and click "Generate Dashboard".</p>
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="nameInput" placeholder="Enter your name">
+
+      <label for="age">Age:</label>
+      <input type="number" id="ageInput" placeholder="Enter your age">
+
+      <label for="colour">Favourite Colour:</label>
+      <input type="text" id="colourInput" placeholder="e.g. Blue, Pink...">
+
+      <label for="hobbies">Hobbies (comma separated):</label>
+      <input type="text" id="hobbiesInput" placeholder="e.g. Reading, Writing, Cooking">
+
+      <button id="generateBtn">Generate Dashboard</button>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div class="dashboard hidden" id="dashboard">
+      <h2>👩‍💻 Personal Dashboard</h2>
+
+      <div class="card">
+        <h3>Personal Info</h3>
+        <p><strong>Name:</strong> <span id="name"></span></p>
+        <p><strong>Age:</strong> <span id="age"></span></p>
+        <p><strong>Favourite Colour:</strong> <span id="colour"></span></p>
+      </div>
+
+      <div class="card">
+        <h3>My Hobbies</h3>
+        <ul id="hobbies"></ul>
+      </div>
+
+      <div class="card">
+        <h3>Future Predictions</h3>
+        <p id="future"></p>
+      </div>
+
+      <div class="card">
+        <h3>Advice Section</h3>
+        <p id="advice"></p>
+      </div>
+
+      <button id="resetBtn">Reset</button>
+    </div>
+  </div>
+
+  <script src="advance.js"></script>
+</body>
+</html>
